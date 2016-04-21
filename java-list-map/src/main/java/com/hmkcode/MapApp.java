@@ -12,11 +12,9 @@ import java.util.TreeMap;
 import com.hmkcode.vo.Person;
 
 
-public class MapApp 
-{
+public class MapApp {
 	
-    public static void main( String[] args )
-    {
+    public static void main( String[] args ) {
        
         
         // ( 1 ) Map
@@ -47,8 +45,7 @@ public class MapApp
         }
         // --> print
     	System.out.println("--------- Print Iterate by Entry -------------");  
-        for(Entry<String, Person> entry:treeMap.entrySet()){
-    		
+        for(Entry<String, Person> entry:treeMap.entrySet()) {
         	System.out.println("treeMap: [key: "+entry.getKey()+" , value: "+entry.getValue());
         }   
                         
@@ -71,7 +68,7 @@ public class MapApp
         System.out.println("List<Person>: "+persons);
     }
     
-    private static Person[] getPersons(){
+    private static Person[] getPersons() {
     	Person[] persons = new Person[5];
     	
     	persons[0] = new Person("Brit", 29);
